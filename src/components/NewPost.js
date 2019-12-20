@@ -23,8 +23,9 @@ class NewPost extends Component {
             <Dialog onClose={this.props.onClose} maxWidth='sm' fullWidth={true} open={this.props.open}>
                 <DialogContent>
                     
-                    <Box style={{ backgroundColor: 'white'}} display='flex' flexDirection='column'>
+                    <Box style={{marginLeft: '-15px', marginRight: '-15px', backgroundColor: 'white'}} display='flex' flexDirection='column'>
                         <TextField
+                            style={{fontFamily: 'Arial Helvetica sans-serif', fontWeight: 'bold'}}
                             variant='outlined'
                             margin='dense'
                             onChange = {this.setTitle}
@@ -34,11 +35,11 @@ class NewPost extends Component {
                             style={{ 
                                 marginTop: '10px', 
                                 border:'1px solid lightGray', 
-                                borderRadius:'2px', 
-                                width: '100%', 
+                                borderRadius:'4px', 
                                 fontFamily: 'Verdana',
                                 paddingTop: '10px',
-                                paddingLeft: '10px'
+                                paddingLeft: '10px',
+                                
                             }}
                             multiline={true}
                             onChange = {this.setContent}
@@ -48,7 +49,7 @@ class NewPost extends Component {
                             inputProps={{ 'aria-label': 'naked' }}
                         />
                         <Box display='flex' flexDirection='row' justifyContent='flex-end' alignItems='center'
-                            style={{ margin: '10px 10px 5px 10px', backgroundColor: 'white', height: '50px' }}>
+                            style={{ margin: '10px 0px 10px 10px', backgroundColor: 'white', height: '50px' }}>
                             <Button style={{backgroundColor: Colors.ROYAL_BLUE}} onClick={(post) => this.props.handleNewPost({title: this.title, content: this.content})} variant="contained" color="primary">Submit</Button>
                         </Box>
                     </Box>

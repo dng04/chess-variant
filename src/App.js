@@ -51,7 +51,7 @@ class App extends Component {
           <Route path="/game/:id" component={Game} />
           <Route path="/variants" component={Variants} />
           <Route path="/home" component={Home} />
-          <Route path="/discuss" render={() => <DiscussionBoard marginLeft='20%' width='60%' />} />
+          <Route path="/discuss" render={() => <DiscussionBoard marginLeft='1%' width='98%' />} />
           <Route
             path="/account/:username"
             render={(props) => (

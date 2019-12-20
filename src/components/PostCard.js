@@ -220,7 +220,7 @@ class PostCard extends Component{
                             <Typography style={{ marginTop: '-2px' }} variant='subtitle2'>{elapsedTime}</Typography>
                         </Box>
                     </Box>
-                    <Typography style={{ color: 'black', marginTop: '10px', marginBottom: '10px', fontFamily: 'Arial', fontSize: '16px' }} variant='body1' component='p'>
+                    <Typography style={{ color: 'black', marginTop: '10px', marginBottom: '10px', fontFamily: 'Arial', fontSize:'16px'}} variant='body1' component='p'>
                         {this.props.content}
                     </Typography>
                     <Box display='flex' flexDirection='row' justifyContent='flex-start'>

@@ -105,12 +105,12 @@ class DiscussionBoard extends Component{
     render() {
         return (
             <Box display='flex' flexDirection='column' style={{marginLeft:this.props.marginLeft, width: this.props.width}}>
+                <NewPost handleNewPost = {this.handleNewPost} onClose = {this.dismissNewPostDialog} open={this.state.showNewPostDialog}/>
                 <Box display='flex' flexDirection='row' justifyContent='flex-end'>
                     <Fab style={{backgroundColor: Colors.ROYAL_BLUE}} onClick={this.showNewPostDialog} color="primary" aria-label="edit">
                         <EditIcon />
                     </Fab>
                 </Box>
-                <NewPost handleNewPost = {this.handleNewPost} onClose = {this.dismissNewPostDialog} open={this.state.showNewPostDialog}/>
                 <List style={{marginTop: '10px'}}>{this.state.posts}</List>
             </Box>
         )

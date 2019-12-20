@@ -27,13 +27,12 @@ class SearchUsersTextField extends Component{
                     variant='outlined'
                     placeholder="Search for Users"
                     onChange={this.props.onChange}
-                    size = 'lg'
-                    style = {{width: this.props.width, backgroundColor: '#F8F8F8'}}
+                    style = {{width: this.props.width}}
                     fullWidth
                     InputProps={{
                         startAdornment: (
                             <InputAdornment position="start">
-                                <SearchIcon />
+                                <SearchIcon style={{color: 'gray'}} />
                             </InputAdornment>
                         ),
                     }}

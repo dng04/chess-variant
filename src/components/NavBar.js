@@ -230,7 +230,7 @@ class NavBar extends Component {
             }}
             >
             <Image src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Chess_pWlt26.svg" alt="Chess Piece" style={imgStyle} fluid />
-            <Link to="/" style={{marginLeft: '-10px', fontSize: '25px'}}>Chess Variants</Link>
+            <Link to="/" style={{marginLeft: '-10px', fontSize: '2vw'}}>Chess Variants</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -241,7 +241,7 @@ class NavBar extends Component {
               onChange = {this.handleSearch}
               open = {this.state.showSearchUsersTextfieldPopper}
               dismissPopper = {this.dismissSearchUsersTextFieldPopper}
-              width = {window.innerWidth * 1/3}
+              width = {this.state.collapsed? window.innerWidth - 30 : window.innerWidth * 1/3}
               anchorEl = {this.searchUsersTextfieldAnchorEl}
             />
           </Nav>

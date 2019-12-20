@@ -31,7 +31,7 @@ class Home extends Component {
 
     else content = (
       <Box style={{marginTop: '100px'}} display='flex' flexDirection='row' justifyContent='space-between'>
-        <DiscussionBoard marginLeft='5%' width='40%' />
+        <DiscussionBoard marginLeft='5%' width='45%' />
         <Lobby marginRight='5%' width='40%' history={this.props.history} /> 
       </Box>   
     )
