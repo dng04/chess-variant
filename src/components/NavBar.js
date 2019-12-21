@@ -220,7 +220,7 @@ class NavBar extends Component {
       
     return (
       <span>
-        <Navbar onToggle = {this.onNavbarToggle} collapseOnSelect expand="lg" style={{fontWeight: 'semi-bold', boxShadow: '0px 3px 3px lightGray'}}variant='light' bg='white' fixed='top'>
+        <Navbar collapseOnSelect expand='lg' style={{boxShadow: '0px 3px 3px lightGray'}} variant='light' bg='white' fixed='top'>
           <Navbar.Brand style={{
             fontFamily: 'chalkduster',
             display: 'flex',

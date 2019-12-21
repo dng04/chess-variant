@@ -47,7 +47,7 @@ class App extends Component {
       <Router>
         <NavBar onNavbarToggle={this.onNavbarToggle}/>
         <Switch >
-          <Route path="/" exact render={() => <Home collapsed={this.state.collapsed}/>}/>
+          <Route path="/" exact render={(props) => <Home {...props} collapsed={this.state.collapsed} />}/>
           <Route path="/game/:id" component={Game} />
           <Route path="/variants" component={Variants} />
           <Route path="/home" component={Home} />

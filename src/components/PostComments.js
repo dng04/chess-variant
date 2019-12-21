@@ -21,7 +21,7 @@ class PostComments extends Component {
                             backgroundColor: 'white', 
                             border: '1px solid lightGray', 
                             borderRadius: '20px', 
-                            width: '77%', 
+                            width: '85%', 
                             fontFamily: 'Verdana',
                             paddingLeft: '15px',
                         }}
@@ -32,7 +32,7 @@ class PostComments extends Component {
                         placeholder="Leave a comment..."
                         inputProps={{ 'aria-label': 'naked' }}
                     />
-                    <Fab style={{backgroundColor: 'dodgerBlue', color: 'white', fontWeight: 'bold', height: '40px'}} onClick={(comment) => this.props.handleNewComment(this.comment)} variant="extended">Add Comment</Fab>
+                    <Fab style={{backgroundColor: 'dodgerBlue', color: 'white', fontWeight: 'bold', width:'14%', height: '40px'}} onClick={(comment) => this.props.handleNewComment(this.comment)} variant="extended">Add</Fab>
                 </Box>
                 <Comment.Group style={{marginLeft: '10px'}} className="ui comments">
                     {this.props.comments}

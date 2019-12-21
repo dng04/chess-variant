@@ -332,7 +332,7 @@ class Lobby extends Component {
       }
     }
     const { history } = this.props;
-    history.push({ pathname: `/game/${gameId}` });
+    this.props.history.push({ pathname: `/game/${gameId}` });
   }
 
   getUserInfo = async () => {
@@ -363,7 +363,7 @@ class Lobby extends Component {
     };
 
     const createGameButtonStyle = {
-      width: '30%',
+      width: this.props.createGameButtonWidth,
       padding: '10px',
       marginBottom: '10px',
       backgroundColor: Colors.ROYAL_BLUE,

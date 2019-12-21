@@ -435,7 +435,7 @@ class Game extends Component {
             players={players}
             variant={this.gameInfo !== null ? this.gameInfo.variant : ''}
           />
-          <div id={this.boardId}>
+          <div style={{border: '2px solid lightGray'}} id={this.boardId}>
             <Chessboard
               position={state.fen}
               lightSquareStyle={{ backgroundColor: Colors.LIGHT_SQUARE }}
